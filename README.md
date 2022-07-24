@@ -13,8 +13,8 @@ To use this project, follow the steps:
 
 Light Theme
 
-![Light Theme](https://github.com/Fatima-Mujahid/amazon-clone-frontend/blob/main/Resources/light.png)
+![Light Theme](https://github.com/Fatima-Mujahid/next-ts-app/blob/main/Resources/light.png)
 
 Dark Theme
 
-![Dark Theme](https://github.com/Fatima-Mujahid/amazon-clone-frontend/blob/main/Resources/dark.png)
+![Dark Theme](https://github.com/Fatima-Mujahid/next-ts-app/blob/main/Resources/dark.png)
