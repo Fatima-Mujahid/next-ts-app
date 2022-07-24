@@ -14,6 +14,7 @@ body {
 
 .height {
   min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 button {
@@ -31,7 +32,6 @@ button {
 .cards {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
 .light {
