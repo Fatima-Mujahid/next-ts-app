@@ -1,0 +1,89 @@
+@use '../styles/colors.scss' as *;
+
+@mixin icon($icon-bg, $icon) {
+  display: inline-block;
+  padding: 0.813rem 0.875rem 0.5rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+  background-color: $icon-bg;
+  color: $icon;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@mixin text {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: 0.75rem;
+  padding: 3.25rem 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 18rem;
+  min-width: 18rem;
+
+  .image {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  h3 {
+    @include text;
+    color: #39a796;
+    font-weight: 600;
+    margin-top: 0.75rem;
+  }
+
+  p {
+    @include text;
+    color: $text;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .link {
+    @include icon($btn-primary-bg, $primary);
+
+    &:hover {
+      @include icon($primary, $light);
+    }
+  }
+
+  .like {
+    @include icon($btn-secondary-bg, $btn-secondary);
+
+    &:hover {
+      @include icon($btn-secondary, $light);
+    }
+  }
+
+  .link *,
+  .like * {
+    stroke-width: 3;
+  }
+}
+
+.light {
+  background-color: $light;
+
+  &.card {
+    box-shadow: 0 0 25px rgba(93, 143, 193, 0.2);
+  }
+}
+
+.dark {
+  background-color: $bg-card-dark;
+
+  .link {
+    @include icon($btn-bg-dark, $primary);
+  }
+
+  .like {
+    @include icon($btn-bg-dark, $btn-secondary);
+  }
+}

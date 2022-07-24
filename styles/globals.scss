@@ -1,0 +1,63 @@
+@use './colors.scss' as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  text-align: right;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.height {
+  min-height: 100vh;
+}
+
+button {
+  font-family: Poppins;
+  margin: 2rem 1rem 2rem 0;
+  padding: 0.75rem 1.25rem 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  color: $text;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.light {
+  background-color: $light;
+
+  button {
+    background-color: $light;
+    box-shadow: 0 0 25px rgba(93, 143, 193, 0.2);
+  }
+}
+
+.dark {
+  background-color: $dark;
+
+  button {
+    background-color: $btn-bg-dark;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
